@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Виселица</title>
+	<link rel="shortcut icon" href="assets/svg/gallows.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<h1 class="main-header">Виселица</h1>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<audio src="assets/sound/glass-smash.mp3" class="sad-sound hidden"></audio>
+		<audio src="assets/sound/sadtrombone.swf.mp3" class="sad-sound-2 hidden"></audio>
+		<audio src="assets/sound/nope.mp3" class="incorrect-guess hidden"></audio>
+		<audio src="assets/sound/pirate.mp3" class="win-sound hidden"></audio>
+
+
+		<div class="container">
+			<section class="rules-section overlay hidden">
+				<div class="disclamer-container">
+					<p class="disclamer">Для целей проверки и тестирования в консоли выведен правильный ответ</p>
+				</div>
+				<div class="rules-container">
+					<p class="rules">Привет, перед вами игра "Виселица". Правила простые: дано слово, нужно угадать его,
+						открывая по буквам, и при этом не повесить пирата. Каждая неправильно открытая буква - часть тела на
+						виселице. АРРР!</p>
+				</div>
+				<button class="start-game">Поехали</button>
+			</section>
+			<div class="word-container"></div>
+			<div class="overlay overlay-lose hidden">
+				<div class="game-over">
+					<p>Game Over</p>
+				</div>
+				<div class="restart-wrapper"><button class="restart">Перезапустить игру</button></div>
+				<div class="correct-answer">Ответ: </div>
+			</div>
+			<div class="overlay overlay-win hidden">
+				<div class="win-game">
+					<p>Winner Winner Chicken Dinner</p>
+				</div>
+				<div class="result"></div>
+				<div class="restart-wrapper"><button class="restart">Перезапустить игру</button></div>
+				<div class="top-results">Результаты последних 10 игр: </div>
+			</div>
+			<div class="img-container">
+				<div class="img-gallows"></div>
+				<!-- <img src="assets/img/head.png" alt="#" class="img-head game-img"> -->
+				<div class="img-head game-img"></div>
+				<div class="img-body game-img"></div>
+				<div class="img-left-hand game-img"></div>
+				<div class="img-right-hand game-img"></div>
+				<div class="img-left-leg game-img"></div>
+				<div class="img-right-leg game-img"></div>
+			</div>
+			<div class="game-wrapper">
+				<h2 class="word-length"></h2>
+
+				<div class="alphabet-container">
+					<p class="alph-letter">А</p>
+					<p class="alph-letter">Б</p>
+					<p class="alph-letter">В</p>
+					<p class="alph-letter">Г</p>
+					<p class="alph-letter">Д</p>
+					<p class="alph-letter">Е</p>
+					<p class="alph-letter">Ж</p>
+					<p class="alph-letter">З</p>
+					<p class="alph-letter">И</p>
+					<p class="alph-letter">Й</p>
+					<p class="alph-letter">К</p>
+					<p class="alph-letter">Л</p>
+					<p class="alph-letter">М</p>
+					<p class="alph-letter">Н</p>
+					<p class="alph-letter">О</p>
+					<p class="alph-letter">П</p>
+					<p class="alph-letter">Р</p>
+					<p class="alph-letter">С</p>
+					<p class="alph-letter">Т</p>
+					<p class="alph-letter">У</p>
+					<p class="alph-letter">Ф</p>
+					<p class="alph-letter">Х</p>
+					<p class="alph-letter">Ц</p>
+					<p class="alph-letter">Ч</p>
+					<p class="alph-letter">Ш</p>
+					<p class="alph-letter">Щ</p>
+					<p class="alph-letter">Ъ</p>
+					<p class="alph-letter">Ы</p>
+					<p class="alph-letter">Ь</p>
+					<p class="alph-letter">Э</p>
+					<p class="alph-letter">Ю</p>
+					<p class="alph-letter">Я</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-git">
+				<span class="year">&copy;2022 &nbsp;</span>
+				<a href="https://github.com/anna-tanisheva" class="footer-link github" target="_blank">Anna Tanisheva</a>
+			</div>
+			<a href="https://rs.school/js-stage0/" class="footer-link rs" target="_blank">
+				<img src="assets/img/logo-rsschool3.png" alt="school-logo" class="logo">
+			</a>
+		</div>
+	</footer>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
