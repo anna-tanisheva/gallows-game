@@ -23,7 +23,6 @@ const winSound = document.querySelector('.win-sound');
 let letterNodes;
 let clickCounter = 0;
 
-
 let indexImg = 0;
 let wordInRussian;
 
